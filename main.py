@@ -1,10 +1,12 @@
-# Вывод приветствия
-print("Hello, World!")
+# Функция вычисления квадрата числа
+def square(x: int) -> int:
+    return x * x 
 
-# Вывод имени студента
-name = "Алина Ренатовна"
-print(f"Студент: {name}")
+# Динамическая типизация
+number = 7
 
-# Вывод даты
-date = "2026-09-24"
-print(f"Дата: {date}")
+# Вызов функции
+result = square(number)
+
+print(f"Число: {number}")
+print(f"Квадрат: {result}")

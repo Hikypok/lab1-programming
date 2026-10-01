@@ -1,18 +1,29 @@
 #include <iostream>
-// Функция вычисления квадрата числа
-auto square(int x) -> int{
-    return x * x;
+
+/**
+ * Рекурсивная функция вычисления факториала числа.
+ * Факториал n! = n * (n-1) * ... * 1, при этом 0! = 1.
+ * 
+ * @param n неотрицательное целое число
+ * @return факториал числа n
+ */
+long long factorial(int n) {
+    // Базовый случай: 0! = 1 и 1! = 1
+    if (n <= 1) {
+        return 1;
+    }
+    // Рекурсивный случай: n! = n * (n-1)!
+    return n * factorial(n - 1);
 }
 
-int main(){
-    // Униформ-инициализация
-    auto number{7};
+int main() {
+    int number = 7;
 
     // Вызов функции
-    auto result = square(number);
-    
+    long long result = factorial(number);
+
     std::cout << "Число: " << number << std::endl;
-    std::cout << "Квадрат: " << result << std::endl;
+    std::cout << "Факториал: " << result << std::endl;
 
     return 0;
 }

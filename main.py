@@ -1,6 +1,7 @@
 # Функция вычисления квадрата числа
 def square(x: int) -> int:
-    return x * x 
+    return x * x
+
 
 # Динамическая типизация
 number = 7

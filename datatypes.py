@@ -4,6 +4,6 @@ decimal = float(input("Введите дробное число: "))
 text = input("Введите строку: ")
 
 # Вывод типов и значений
-print(f"Значение: {integer}, тип: {type(integer).__name__}") # целого числа
-print(f"Значение: {decimal}, тип: {type(decimal).__name__}") # действительных чисел
-print(f"Значение: {text}, тип: {type(text).__name__}") # строки
+print(f"Значение: {integer}, тип: {type(integer).__name__}")  # целого числа
+print(f"Значение: {decimal}, тип: {type(decimal).__name__}")  # действительных чисел
+print(f"Значение: {text}, тип: {type(text).__name__}")  # строки

@@ -10,3 +10,7 @@ else:
     maximum = c
 
 print(f"Максимум: {maximum}")
+
+# АЛЬТЕРНАТИВА
+maximum = max(a, b, c)
+print(f"Максимум: {maximum}(через встроенную функцию)")

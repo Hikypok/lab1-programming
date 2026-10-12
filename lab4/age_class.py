@@ -8,9 +8,9 @@ try:
         print("Подросток")
     elif age <= 64:
         print("Взрослый")
-    elif age > 64 and age < 200:
+    elif age <= 200:
         print("Пожилой")
     else:
         print("Ты инопланетянин?")
-except TypeError:
+except ValueError:
     print("Это не число! Введите число!!")

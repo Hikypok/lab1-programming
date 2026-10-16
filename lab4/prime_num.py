@@ -1,15 +1,18 @@
-num = int(input("Введите число: "))
-deli = [] #список делителей числа
+try:
+    num = int(input("Введите число: "))
+    deli = [] #список делителей числа
 
-for i in range(1, num+1): #проверяем все числа от 1 до num
-    if num % i == 0:
-        deli.append(i)
+    for i in range(1, num+1): #проверяем все числа от 1 до num
+        if num % i == 0:
+            deli.append(i)
 
-if num in deli and len(deli) == 2: #проверяем чтобы в списке были только 1 и само число
-    print(f"{num} - простое число")
-elif num == 1 or num == 0:
-    print(f"{num} - не простое и не составное")
-else:
-    print(f"{num} - составное число")
+    if num in deli and len(deli) == 2: #проверяем чтобы в списке были только 1 и само число
+        print(f"{num} - простое число")
+    elif num < 2:
+        print(f"{num} - не простое и не составное")
+    else:
+        print(f"{num} - составное число")
+except ValueError:
+    print("Это не число! Введите число!!")
 # Для учебных целей использовали полный перебор
 # Для оптимизации будем проверять делители до корня num
